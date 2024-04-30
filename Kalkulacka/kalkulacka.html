@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Jednoduchá kalkulačka</title>
+</head>
+<body>
+  <h1>Jednoduchá kalkulačka</h1>
+  <form method="post" action="index.php">
+    <label for="cislo1">První číslo:</label>
+    <input type="number" name="cislo1" id="cislo1" required><br><br>
+    <label for="operace">Operace:</label>
+    <select name="operace" id="operace" required>
+      <option value="scitani">Sčítání</option>
+      <option value="odcitani">Odčítání</option>
+      <option value="nasobeni">Násobení</option>
+      <option value="deleni">Dělení</option>
+    </select><br><br>
+    <label for="cislo2">Druhé číslo:</label>
+    <input type="number" name="cislo2" id="cislo2" required><br><br>
+    <button type="submit" name="spocitat">Spočítat</button>
+  </form>
+
+</body> 
+</html>
