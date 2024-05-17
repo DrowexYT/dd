@@ -1,25 +1,76 @@
 <!DOCTYPE html>
-<html lang="cs">
-<head>
-  <meta charset="UTF-8">
-  <title>Jednoduchá kalkulačka</title>
-</head>
-<body>
-  <h1>Jednoduchá kalkulačka</h1>
-  <form method="post" action="index.php">
-    <label for="cislo1">První číslo:</label>
-    <input type="number" name="cislo1" id="cislo1" required><br><br>
-    <label for="operace">Operace:</label>
-    <select name="operace" id="operace" required>
-      <option value="scitani">Sčítání</option>
-      <option value="odcitani">Odčítání</option>
-      <option value="nasobeni">Násobení</option>
-      <option value="deleni">Dělení</option>
-    </select><br><br>
-    <label for="cislo2">Druhé číslo:</label>
-    <input type="number" name="cislo2" id="cislo2" required><br><br>
-    <button type="submit" name="spocitat">Spočítat</button>
-  </form>
+<html>
 
-</body> 
+<head>
+  <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.1.0/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="../cookies.js" charset="UTF-8"></script>
+
+  <noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLV94RFEQ3"></script>
+  <script>src="../ga.js"</script>
+  <title>Laos Guide</title>
+  <link rel="icon" type="image/x-icon" href="../Stránka-obrázky/favicon_logo.png">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="kalkulacka.css">
+  <style type="text/css">
+    h1 {
+      font-size: 45px;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="topnav">
+      <a class="logo" href="../index.html">
+        <img src="../Stránka-obrázky/logo.png" alt="Logo" height="100" width="223">
+      </a>
+      <div class="menu">
+        <a class="active" href="../Laos/main.html">Laos</a>
+              <a href="kalkulacka.html">Kalkulačka</a>
+        <a href="../Hra/hra.html">Hra</a>
+        </div>
+  </header>
+
+  <br>
+
+  <main>
+    <h2>Kalkulačka</h2>
+    <form id="calculator">
+      <label for="cislo1">První číslo:</label>
+      <input type="number" name="cislo1" id="cislo1" required><br><br>
+      <label for="operace">Operace:</label>
+      <select name="operace" id="operace" required>
+        <option value="scitani">Sčítání</option>
+        <option value="odcitani">Odčítání</option>
+        <option value="nasobeni">Násobení</option>
+        <option value="deleni">Dělení</option>
+      </select><br><br>
+      <label for="cislo2">Druhé číslo:</label>
+      <input type="number" name="cislo2" id="cislo2" required><br><br>
+      <button type="button" id="spocitat">Spočítat</button>
+      <p id="result"></p>
+    </form>
+  </main>
+
+  <br>
+
+  <footer class="bottom-bar">
+		<p class="text">E-mail: dd@rizz.net</p>
+		<p class="text">Tel. číslo: +420 562 267 492</p>
+		<p class="text">Adresa: Chánov 45</p>
+		<div class="right-links">
+		  <a class="cookies-link" href="#" id="open_preferences_center">Update cookies preferences</a>
+		  <a class="cookies-link" href="../Laos/oou.html">Ochrana Osobních Údajů</a>
+		</div>
+	  </footer>
+</body>
 </html>
