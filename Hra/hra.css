@@ -1,0 +1,145 @@
+body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .posledniObrazek {
+    position: relative;
+    bottom: 20px;
+  }
+  
+  .topnav {
+    width: 98%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: -20px;
+  }
+  
+  header {
+    background: linear-gradient(to right, #A0291B, #B73B2B); /* Darker red gradient */
+    height: 120px;
+    position: relative;
+  }
+  header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  a {
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    color: #E0F2F1;
+    padding: 10px;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .logo a:before {
+    display: none;
+  }
+  
+  .menu a:before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 6px;
+    width: 0;
+    background-color: #E0F2F1;
+    border-radius: 50px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-out;
+  }
+  
+  .menu a:hover:before {
+    width: calc(100% - 20px);
+    transform: scaleX(1);
+  }
+  
+  .logo {
+    order: 1;
+  }
+  
+  .menu {
+    order: 2;
+  }
+  
+  .bottom-bar {
+    display: flex;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to right, #A0291B, #B73B2B); /* Darker red gradient */
+    align-items: center;
+    color: #E0F2F1;
+  }
+  
+  .bottom-bar .text {
+    margin-right: 15px;
+  }
+  
+  .bottom-bar .right-links {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  
+  .popup {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .popup-name {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .popup-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 300px;
+    background-color: #FFF;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+  }
+  
+  .popup.active .popup-content {
+    display: block;
+  }
+  
+  main {
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: monospace;
+    background-color: #F2F4F5; /* Lighter background */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto; /* Add margin for spacing */
+    width: 500px; /* Optional: Set a fixed width */
+    height: 400px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Calculator element styles */
+  .calculator-input input[type="number"],
+  .calculator-input select {
+    background-color: #e6f;
+  }
+  
+  .button-click-animation {
+    animation: button-click 0.2s ease-out;
+  }
